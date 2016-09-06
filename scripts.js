@@ -1,9 +1,17 @@
-//function to set background to random color
-function resetBackground() {
+//event listener for random-color-button click
+$('#random-color-button').click(function(){
+  generateRandomBackgroundColor();
+});
+//event listener for reset-button click
+$('#reset-button').click(function(){
+  resetBackgroundColor();
+});
+//function to reset background color to white 
+function resetBackgroundColor() {
   $("body").css("background", "white");
 };
 //function to generate random hex code
-function getRandomHexCode () {
+function generateRandomBackgroundColor () {
   var randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
   if (randomColor === "#FFFFFF") {
     var randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
@@ -13,11 +21,3 @@ function getRandomHexCode () {
     $("body").css("background", randomColor);
   }
 };
-//event listener to random button click
-$('#random-color').click(function(){
-  getRandomHexCode();
-});
-//event listener for reset button click
-$('#reset').click(function(){
-  resetBackground();
-});

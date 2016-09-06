@@ -5,23 +5,22 @@ body {
 .container {
   display: flex;
   margin: auto;
-  height: 500px;
-  /*line-height: 250px;*/
+  height: 800px;
   width: 500px;
-  /*vertical-align: middle;
-  text-align: center;*/
-  justify-content: center;
-  align-items: center;
 }
 
 button {
+  height: 10%;
+  width: 35%;
+  font-size: medium;
+  margin: 5px 5px 5px 5px;
   outline: none;
   font-family: 'Open Sans', sans-serif;
-  font-style: bold 700;
+  font-weight: 700;
   color: #FFFFFF;
   background: #E5B6D5;
   border-style: solid;
-  border-width: 3px;
+  border-width: 10px;
   border-top-color: #B2479A;
   border-bottom-color: #B2479A;
   border-right-color: #CC7FB5;
@@ -35,7 +34,6 @@ button:hover {
   background: #B2479A;
   color: #FFFFFF;
   border-style: solid;
-  border-width: 3px;
   border-top-color: #CC7FB5;
   border-bottom-color: #CC7FB5;
   border-right-color: #E5B6D5;
