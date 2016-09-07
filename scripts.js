@@ -6,7 +6,7 @@ $('#random-color-button').click(function(){
 $('#reset-button').click(function(){
   resetBackgroundColor();
 });
-//function to reset background color to white 
+//function to reset background color to white
 function resetBackgroundColor() {
   $("body").css("background", "white");
 };
