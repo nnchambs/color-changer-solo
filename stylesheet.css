@@ -40,7 +40,7 @@ button:hover {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;;
+  justify-content: center;
 }
 
   #reset {
@@ -48,7 +48,7 @@ button:hover {
     font-size: 18px;
     font-weight: 700;
     height: 45px;
-    margin-top: 20px;
+    margin-top: 40px;
     width: 200px;
   }
 }
