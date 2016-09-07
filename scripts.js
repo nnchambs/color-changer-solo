@@ -1,4 +1,12 @@
-//function to set background to random color
+//event listener for random-color button click
+$('#random-color').click(function(){
+  getRandomHexCode();
+});
+//event listener for reset button click
+$('#reset').click(function(){
+  resetBackground();
+});
+//function to reset background to white
 function resetBackground() {
   $("body").css("background", "white");
 };
@@ -13,11 +21,3 @@ function getRandomHexCode () {
     $("body").css("background", randomColor);
   }
 };
-//event listener to random button click
-$('#random-color').click(function(){
-  getRandomHexCode();
-});
-//event listener for reset button click
-$('#reset').click(function(){
-  resetBackground();
-});
